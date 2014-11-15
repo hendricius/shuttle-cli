@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require "shuttle"
+
+module Shuttle
+  class CLI
+    def self.start
+      puts "hi"
+    end
+  end
+end
+
+Shuttle::CLI.start
