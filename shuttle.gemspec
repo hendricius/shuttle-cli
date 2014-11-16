@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["hendrik.kleinwaechter@gmail.com"]
   spec.summary       = %q{Command line interface for the Mac Shuttle SSH Client}
   spec.description   = %q{For people who work in the Terminal. This provides a command line interface with all your SSH bookmarks.}
-  spec.homepage      = ""
+  spec.homepage      = "http://github.com/hendricius/shuttle-cli"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,11 +18,15 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "terminal-table", "~> 1.4.5"
-  spec.add_runtime_dependency "json", "~> 1.8.1"
-  spec.add_runtime_dependency "activesupport", "~> 4.1.7"
-  spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake", "~> 10.3.2"
-  spec.add_development_dependency "pry", "~> 0.10.1"
+  spec.add_runtime_dependency "terminal-table", "1.4.5"
+  spec.add_runtime_dependency "json", "1.8"
+  spec.add_runtime_dependency "activesupport", "4.1.7"
+  spec.add_runtime_dependency "i18n", "0.6.9"
+  spec.add_runtime_dependency "tzinfo", "1.1"
+  spec.add_runtime_dependency "minitest", "5.1"
+  spec.add_runtime_dependency "thread_safe", "0.3.4"
+  spec.add_development_dependency "bundler", '1.7.6'
+  spec.add_development_dependency "rake", "10.3.2"
+  spec.add_development_dependency "pry", "0.10.1"
 
 end
