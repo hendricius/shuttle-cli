@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
-require_relative "../lib/shuttle"
+require_relative "../lib/shuttle_cli"
 
-module Shuttle
+module ShuttleCli
   class CLI
     class << self
       def printer
-        @printer ||= Shuttle::Printer.new
+        @printer ||= ShuttleCli::Printer.new
       end
 
       def start
@@ -22,4 +22,4 @@ module Shuttle
   end
 end
 
-Shuttle::CLI.start
+ShuttleCli::CLI.start

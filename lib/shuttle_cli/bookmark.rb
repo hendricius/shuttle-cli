@@ -1,4 +1,4 @@
-module Shuttle
+module ShuttleCli
   class Bookmark
     attr_accessor :children, :name, :cmd, :number
 

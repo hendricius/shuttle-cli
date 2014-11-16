@@ -1,4 +1,4 @@
-module Shuttle
+module ShuttleCli
   class Printer
     def print
       rows = bookmarks.map(&:to_a)
@@ -22,7 +22,7 @@ module Shuttle
     end
 
     def reader
-      @reader ||= Shuttle::Reader.new
+      @reader ||= Reader.new
     end
   end
 end

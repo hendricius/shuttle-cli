@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'shuttle/version'
+require 'shuttle_cli/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "shuttle"
-  spec.version       = Shuttle::VERSION
+  spec.name          = "shuttle_cli"
+  spec.version       = ShuttleCli::VERSION
   spec.authors       = ["Hendrik Kleinwaechter"]
   spec.email         = ["hendrik.kleinwaechter@gmail.com"]
   spec.summary       = %q{Command line interface for the Mac Shuttle SSH Client}

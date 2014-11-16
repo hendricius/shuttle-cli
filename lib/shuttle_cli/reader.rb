@@ -1,4 +1,4 @@
-module Shuttle
+module ShuttleCli
   class Reader
     attr_accessor :bookmarks
 
