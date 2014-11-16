@@ -3,9 +3,21 @@ require_relative "../lib/shuttle"
 
 module Shuttle
   class CLI
-    def self.start
-      printer = Shuttle::Printer.new
-      printer.print
+    class << self
+      def printer
+        @printer ||= Shuttle::Printer.new
+      end
+
+      def start
+        printer.print
+        take_user_input
+      end
+
+      def take_user_input
+        puts "Enter a bookmark number to connect:"
+        number = gets.chomp.to_i
+        printer.connect_to_number number
+      end
     end
   end
 end

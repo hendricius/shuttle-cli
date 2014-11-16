@@ -25,5 +25,9 @@ module Shuttle
     def to_a
       [number, name, cmd]
     end
+
+    def connect
+      system(cmd)
+    end
   end
 end
