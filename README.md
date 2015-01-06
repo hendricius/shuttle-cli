@@ -25,7 +25,7 @@ You will need `Ruby 2` installed on your mac. If you don't have it, have a look 
 
 Install it yourself as:
 
-    $ gem install shuttle
+    $ gem install shuttle_cli
     
 Make sure to rehash your environment:
 
