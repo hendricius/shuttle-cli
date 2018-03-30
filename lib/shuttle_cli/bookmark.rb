@@ -23,16 +23,16 @@ module ShuttleCli
       obj
     end
 
-    def build_name
+    def build_name parent, name
       if parent
-        "#{parent.name} - #{name}"
+        "#{build_name(parent.parent, parent.name)} - #{name}"
       else
         name
       end
     end
 
     def to_a
-      [number, build_name, cmd]
+      [number, build_name(parent, name), cmd]
     end
 
     def connect
