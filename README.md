@@ -21,6 +21,12 @@ connecting....
 
 ## Installation
 
+```
+gem build shuttle_cli.gemspec
+gem install ./shuttle_cli-0.0.5.gem
+```
+
+
 You will need `Ruby 2` installed on your mac. If you don't have it, have a look at [rbenv](https://github.com/sstephenson/rbenv) and [ruby-build](https://github.com/sstephenson/ruby-build)
 
 Install it yourself as:
@@ -46,3 +52,4 @@ Start shuttle by typing:
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
